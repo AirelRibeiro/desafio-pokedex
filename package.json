@@ -2,10 +2,10 @@
   "name": "pokedex-project",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
+    "cypress": "npx cypress open",
     "build": "vite build",
     "preview": "vite preview --port 4173",
-    "test:unit": "vitest --environment jsdom",
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
