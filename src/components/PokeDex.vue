@@ -17,9 +17,11 @@ import EvolutionList from './EvolutionList.vue';
         this.pokemonData = false;
         this.pokemonNotFound = false;
         const data = await fetchAllData(name.toLowerCase());
-        if(data.message) return this.pokemonNotFound = true;
+        if(data.message) {
+          this.pokemonNotFound = true;
+          return;
+        }
         this.pokemonData = data[0];
-        console.log(data[1]);
         this.evolutionData = { evolucion: data[1], getData: this.getData };
       }
     },
@@ -39,6 +41,7 @@ import EvolutionList from './EvolutionList.vue';
   <div id="pokemon-informations">
     <SinglePokemn v-if="pokemonData" v-bind:pokemonData="pokemonData"/>
     <EvolutionList v-if="pokemonData" v-bind:evolutionData="evolutionData"/>
+    <h1 v-if="!pokemonData && !pokemonNotFound" >Busque seu Pokemon!</h1>
     <h1 id="not-found" v-if="pokemonNotFound" >Pokemon não encontrado!!</h1>
   </div>
 </template>
