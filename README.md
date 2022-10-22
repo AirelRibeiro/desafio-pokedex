@@ -1,4 +1,4 @@
-<h1 align="center">POKÉDEX</h1>
+![image](https://user-images.githubusercontent.com/98190806/197323424-d40d0c93-8aac-4a95-8959-449003a08754.png)
 
 
 ## Descrição
@@ -12,12 +12,12 @@ A aplicação foi desenvolvida usando Vue.js, que permitiu a criação de compon
 
 1. Escolha um diretório e clone o repositório utilizando **git clone**:
 ```
-  git clone git@github.com:AirelRibeiro/blogs-api.git
+  git@github.com:AirelRibeiro/desafio-pokedex.git
 ```
 
 2. Acesse o diretório do projeto **blogs-api** e instale as dependências:
 ```
-  cd blogs-api
+  cd desafio-pokedex
   npm install
 ```
 
