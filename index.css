@@ -1,0 +1,243 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('http://fonts.cdnfonts.com/css/clap-hand');
+@import url('http://fonts.cdnfonts.com/css/poetsen-one');
+
+body::before {
+  background-image: url('./src/images/fundo.png');
+  background-attachment: fixed;
+  background-size: cover;
+  content: "";
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 2.2em;
+  color: rgb(99, 52, 5);
+  letter-spacing: 0.3rem;
+}
+
+#page-title {
+    text-align: center;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+#search input {
+border-radius: 50px;
+font-family: 'Poetsen One', sans-serif;
+font-size: large;
+text-align: center;
+text-transform: uppercase;
+}
+
+#search button {
+border-radius: 50px;
+font-family: 'Poetsen One', sans-serif;
+font-size: large;
+height: 40%; 
+}
+
+#pokemon-informations {
+  display: flex;
+}
+
+#single-pokemon {
+  width: 60%;
+}
+
+#informations {
+  margin: auto;
+  padding: 5vh;
+}
+
+#name-image {
+  display: flex;
+  font-family: 'Clap Hand', sans-serif;
+  color: rgb(99, 52, 5);
+  letter-spacing: .2rem;
+}
+
+#name-image img {
+  background-color: rgba(230, 187, 144, 0.61);
+  border-radius: 50px;
+}
+
+
+
+@media screen and (max-width: 599px) {
+
+  body::before {
+    background-image: url('./src/images/mobile-fundo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    content: "";
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  #search {
+    height: 15vh;
+    flex-direction: column;
+  }
+
+  #search input {
+    height: 30%;
+    margin: auto;
+    width: 70%;  
+  }
+
+  #search button {
+    margin: auto;
+    width: 40%;  
+  }
+
+  #pokemon-informations {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  #single-pokemon {
+    border-radius: 50px;
+    margin: auto;
+    width: 90%;
+  }
+
+  #informations {
+    background-color: rgba(205, 134, 63, 0.568);
+    border-radius: 50px;
+    font-size: 1.2em;
+  }
+
+  #name-image {
+    justify-content: space-evenly;
+  }
+
+  #name-image img {
+    background-color: rgba(205, 134, 63, 0.493);
+  }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  
+  #search {
+    height: 20vh;
+  }
+
+  #search input {
+    background-color: rgba(230, 187, 144, 0.815);
+    border: solid 1px rgb(99, 52, 5);
+    color: rgb(99, 52, 5);
+    height: 30%;
+    margin-right: 1vh;
+    width: 30%;  
+  }
+
+  #search button {
+    background-color: rgba(230, 187, 144, 0.815);
+    border: solid 1px rgb(99, 52, 5);
+    color: rgb(99, 52, 5);
+    width: 18%;  
+  }
+
+  #pokemon-informations {
+    justify-content: space-around;
+    margin: auto;
+  }
+
+  #name-image {
+    justify-content: start;
+  }
+
+  #name-image img {
+    margin-left: 5vh;
+  }
+
+  #name-image h2 {
+    margin-left: 4vh;
+    height: 10%;
+  }
+
+  h2 {
+    font-family: 'Clap Hand', sans-serif;
+    color: rgb(99, 52, 5);
+    letter-spacing: .2rem;
+    text-align: center;
+  }
+
+  #informations {
+    color: rgb(99, 52, 5);
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+}
+
+@media screen and (min-width: 901px) {
+  
+  #search {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  #search input {
+    background-color: rgba(230, 187, 144, 0.815);
+    border: solid 1px rgb(99, 52, 5);
+    color: rgb(99, 52, 5);
+    height: 40%;
+    margin-right: 1vh;
+    width: 30%;  
+  }
+
+  #search button {
+    background-color: rgba(230, 187, 144, 0.815);
+    border: solid 1px rgb(99, 52, 5);
+    color: rgb(99, 52, 5);
+    height: 40%;
+    width: 20%;  
+  }
+
+  #pokemon-informations {
+    justify-content: center;
+    margin: 0 5vw;
+  }
+
+  #name-image {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+  }
+
+  #name-image h2 {
+    font-family: 'Clap Hand', sans-serif;
+    height: 10%;
+  }
+
+  #informations {
+    color: rgb(99, 52, 5);
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+}
