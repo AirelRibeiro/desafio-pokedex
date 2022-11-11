@@ -2,7 +2,7 @@
 
 
 ## Descrição
-Este projeto foi desenvolvido para desafio técnico no processo seletivo da [Copybase](https://copybase.com.br/?utm_source=googleads&utm_medium=search&utm_term=copybase&gclid=Cj0KCQjwhsmaBhCvARIsAIbEbH5vKfIzQ6DWkSEgy_AsCEagArztCjjOoHelpAaMUU6Q5M169VzC1xkaAuLIEALw_wcB). A Pokédex faz utiliza a API [PokeApi](https://pokeapi.co/) para permitir que a pessoa usuária pesquise o pokemon que quiser, visualizando seu id, medidas físicas, habitát, tipo, nível de felicidade, movimentos, imagem, habilidades e evoluções possíveis. A partir de suas evoluções, o usuário também pode alterar a visualização do pokemon à vontade.
+Esta Pokédex utiliza a API [PokeApi](https://pokeapi.co/) para permitir que a pessoa usuária pesquise o pokemon que quiser, visualizando seu id, medidas físicas, habitát, tipo, nível de felicidade, movimentos, imagem, habilidades e evoluções possíveis. A partir de suas evoluções, o usuário também pode alterar a visualização do pokemon à vontade.
 
 
 ## Ferramentas de desenvolvimento:
